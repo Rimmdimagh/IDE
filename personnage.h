@@ -22,6 +22,10 @@ double acceleration;
 }perso;
 
 
+
+
+
+
 void initPerso(Personne *p);
 void afficherPerso(Personne p,SDL_Surface *screen);
 void deplacerPerso(Personne *p,Uint32 dt);
