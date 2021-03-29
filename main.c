@@ -1,8 +1,4 @@
 #include"fonction.h>"
-
-
- 
-
 int main(int argc, char *argv[])
 {
 
@@ -10,7 +6,7 @@ perso p;
 Uint32 dt,t_prev;
 
 int continuer = 1;
-p->perso=IMG_Load("");
+
 
 
 SDL_SetColorKey(p.sprite, SDL_SRCCOLORKEY, SDL_MapRGB(p.sprite->format, 0, 0, 255));
@@ -28,6 +24,7 @@ switch (event.key.keysym.sym){
 
 case SDLK_SPACE:
 p.acceleration+=0.005;
+
 break;
 case SDLK_DOWN:
 p.acceleration-=0.01;
@@ -43,10 +40,6 @@ break;
 
 }
 }
-
-
-
-
 
 
 
